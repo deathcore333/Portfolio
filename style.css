@@ -3,14 +3,22 @@
   margin: 0;
   font-family: Papyrus, cursive;
   box-sizing: border-box;
+  
+}
+body{
   background: black;
+}
+@media(max-width: 700px){
+  body{
+    font-size: 0.8rem;
+  }
 }
 .hero{
   height: 100vh;
   width: 100%;
-  background-image: url(https://images.pexels.com/photos/1097456/pexels-photo-1097456.jpeg?auto=compress&cs=tinysrgb&w=600);
+  background-image: url(https://images.pexels.com/photos/1097456/pexels-photo-1097456.jpeg?auto=compress&cs=tinysrgb&w=60https://images.pexels.com/photos/696680/pexels-photo-696680.jpeg?auto=compress&cs=tinysrgb&w=6000);
   background-size: cover;
-  background-position: center;
+background-position: center;
 }
 nav{
   display: flex;
@@ -28,7 +36,7 @@ nav{
   cursor: pointer;
 }
 span{
-  color: #f9004d;
+  color:#c94c4c ;
 }
 nav ul li{
   list-style-type: none;
@@ -89,13 +97,14 @@ h4{
   position: relative;
 
 }
-.newsletter form input{
+.newsletter form input:first-child{
   display: inline-block;
   width: 100%;
   padding: 14px 130px 14px 15px;
   border: 2px solid #f9004d;
   outline: none;
   border-radius: 30px;
+  background: white;
 }
 .newsletter form input:last-child{
   position: absolute;
@@ -118,24 +127,26 @@ h4{
 .about img {
   height: auto;
   width: 430px;
+  padding: 10px;
 }
 .about-text{
   width: 550px;
 }
-main{
+.main{
   width: 1130px;
   max-width: 95%;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 50px;
+  padding-bottom: 30px;
 }
 .about-text h2{
-  color: white;
+  color:white;
   font-size: 75px;
   text-transform: capitalize;
   margin-bottom: 20px;
+  padding: 10px
 }
 .about-text h5{
   color: white;
@@ -143,13 +154,15 @@ main{
   font-size: 22px;
   margin-bottom: 25px;
   text-transform: capitalize;
+  padding: 10px;
 }
 .about-text p{
-  color: #fcfc;
+  color: #c7003d;
   letter-spacing: 1px;
   line-height: 28px;
   font-size: 18px;
   margin-bottom: 45px;
+  padding: 10px;
 }
 button{
   background-color: #f9004d;
@@ -170,12 +183,13 @@ button:hover{
   background: #101010;
   width: 100%;
   padding: 100px 0px;
+  text-align: center;
 }
 .title h2{
   color: white;
   font-size: 75px;
   width: 1130px;
-  margin: 30px auto;
+  margin: 30px;
   text-align: center;
 }
 .box{
@@ -183,6 +197,16 @@ button:hover{
   justify-content: center;
   align-items: center;
   min-height: 400px;
+  flex-direction: row;
+  flex-basis: 32%;
+  margin-left: 5px;
+  margin-right: 30px;
+}
+@media(maxwidth: 700px){
+  .box{
+    margin-left: 0px;
+    margin-right: 15px;
+  }
 }
 .card{
   height: 365px;
@@ -199,7 +223,6 @@ button:hover{
   font-size: 50px;
   display: block;
   text-align: center;
-  margin-align: center;
   margin: 25px 0px;
   color: #f9004d;
 }
@@ -214,13 +237,13 @@ pra p{
   line-height: 27px;
   margin-bottom: 25px;
 }
-.card .buton{
+.card .button{
   background-color: #f9004d;
   color: white;
   text-decoration: none;
   border: 2px solid transparent;
   font-weight: bold;
-  padding: 13px 22px;
+  padding: 10px 19px;
   border-radius: 30px;
   transition: .4s;
 }
@@ -258,4 +281,54 @@ pra p{
   background-color: transparent;
   border: 2px solid #f9004d;
   cursor: pointer;
+}
+footer{
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: #101010;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer p:nth-child(1){
+  font-size: 30px;
+  color: white;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+footer p:nth-child(2){
+  color: white;
+  font-size: 17px;
+  width: 500px;
+  text-align: center;
+  line-height 26px;
+}
+.social{
+  display: flex;
+}
+.social a{
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  background: #f9004d;
+  border-radius: 20%;
+  margin: 22px 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 50px;
+  align-items: center;
+}
+.social a:hover{
+  transform: scale(1.3);
+  transition: .3s;
+
+}
+.end{
+  position: absolute;
+  color: #f9004d;
+  bottom: 35px;
+  font-size: 14px;
 }
