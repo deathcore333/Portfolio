@@ -4,13 +4,14 @@
     <meta charset="utf-8">
     <!-- Set device width -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio Website</title>
   </head>
   <body>
     <!-- hero -->
-    <div class="hero">
-      <nav>
+    <div class="hero" id="welcome-section">
+      <nav id="navbar">
         <h2 class="logo">Portfo<span>lio</span></h2>
         <ul>
           <li><a href="#">Home</a></li>
@@ -27,8 +28,8 @@
         <h1>Amos <span>Mwangi</span></h1>
         <h3>I am a Fullstack Developer.</h3>
         <div class="newsletter">
-          <form class="Subscribe" action="index.html" method="post">
-            <input type="email" name="eamil" id="mail" placeholder="Please Enter Your Email">
+          <form class="Subscribe" action="https://formsubmit.co/el/cexusi" method="post">
+            <input type="email" name="email" id="mail" placeholder="Please Enter Your Email">
             <input type="submit" name="submit" value="Let's Start">
           </form>
         </div>
@@ -37,10 +38,10 @@
     <!-- About Section -->
     <section>
       <div class="main">
-        <img src="" alt="">
+        <img src="https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg?auto=compress&cs=tinysrgb&w=600">
         <div class="about-text">
           <h2>About Me</h2>
-          <h5>Developer & Designer</h5>
+          <h5>Developer & <span>Designer</span></h5>
           <p>I am a fullstack developer who can provie code and pixel perfect design. I can create modern responsive websites with interactive animations and features. My goal is to make the website or application as user friendly as possible for all users, regardless of thier devices or browser</p>
            <button type="button" name="button">Let's Talk</button>
         </div>
@@ -55,7 +56,7 @@
 
         <div class="box">
           <div class="card">
-            <i class="fas fa-bars"></i>
+            <i class="fa-duotone fa-layer-group"></i>
             <h5>Web Development</h5>
             <div class="pra">
               <p>Every website needs to meet two precise goals. It should work seamlessly across different devices and it should as fast and as responsive as possible</p>
@@ -67,24 +68,24 @@
         </div>
 
       </div>
+
       <div class="box">
         <div class="card">
-          <i class="fas fa-bars"></i>
-          <h5>Web Development</h5>
+         <i class="fa-brands fa-connectdevelop"></i>
+          <h5>Application Development</h5>
           <div class="pra">
             <p>Every website needs to meet two precise goals. It should work seamlessly across different devices and it should as fast and as responsive as possible</p>
             <p style="textalign: center;">
               <a class="button" href="#">Read More</a>
             </p>
         </div>
-
       </div>
-
     </div>
+
     <div class="box">
       <div class="card">
         <i class="fas fa-bars"></i>
-        <h5>Web Development</h5>
+        <h5>Projects</h5>
         <div class="pra">
           <p>Every website needs to meet two precise goals. It should work seamlessly across different devices and it should as fast and as responsive as possible</p>
           <p style="textalign: center;">
@@ -102,14 +103,17 @@
 
     </div>
     <!-- Footer section -->
-    <footer>Mwas</footer>
+    <footer>
     <!-- add copyright section -->
     <p>For more information and inquiries</p>
     <div class="social">
-      <a href="#"></a>
-      <a href="#"></a>
-      <a href="#"></a>
-      <a href="#"></a>
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://wa.link/w2abah"><i class="fa-brands fa-square-whatsapp"></i></a>
+      <a href="https://twitter.com/MwasA_254"><i class="fa-brands fa-square-twitter"></i></a>
+      <a href="https://github.com/deathcore333"><i class="fa-brands fa-square-github"></i></a>
     </div>
+    <p class="end">
+      Copyright Mwas 2022</p>
+    </footer>
   </body>
 </html>
